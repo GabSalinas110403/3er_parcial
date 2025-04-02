@@ -2,7 +2,7 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 
-/src/environments/environments.ts
+/src/environments/enviroment.development.ts
 # Compiled output
 /dist
 /tmp
