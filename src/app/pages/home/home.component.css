@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #bfbebe;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Invierte el orden de las secciones */
+    width: 1200px;
+    height: 650px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sección de Bienvenida */
+.sign-up-container {
+    flex: 1;
+    background: #0a07e0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+/* Sección de Inicio de Sesión */
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    padding: 30px;
+}
+
+.sign-in-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.div1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background: #2724cf;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    display: block;
+    width: 80%; /* Ajusta el ancho del botón */
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background: #0300a3;
+}
+
+.exit-button{
+    background: #0baae9cc;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    display: block;
+    width: 100%; /* Ajusta el ancho del botón */
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exit-button:hover{
+    background: #0baae95e;
+
+}

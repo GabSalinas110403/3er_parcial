@@ -1,0 +1,90 @@
+<body>
+    <div class="catalogo">
+        <h1>Registro de citas</h1>
+      
+        <div class="center-container">
+            <div class="col-sm-4">
+                <p>
+                    <label type="text" required>Cliente</label>
+                    <input type="text" class="form-control" [(ngModel)]="cita.cliente" placeholder="Angel"/>
+                </p>
+                <p>
+                    <label type="text" required>Motivo</label>
+                    <input type="text" class="form-control" [(ngModel)]="cita.motivo" placeholder="Consulta"/>
+                </p>
+                <p>
+                    <label type="text" required>Mascota</label>
+                    <input type="text" class="form-control" [(ngModel)]="cita.mascota" placeholder="Gato"/>
+                </p>
+                <p>
+                    <label type="text" required>Estado</label>
+                    <input type="text" class="form-control" [(ngModel)]="cita.estado" placeholder="Pendiente"/>
+                </p>
+                <p>
+                    <label type="text" required>Fecha</label>
+                    <input type="date" class="form-control" [(ngModel)]="cita.fecha"/>
+                </p>
+                <p>
+                    <label type="text" required>Hora</label>
+                    <input type="time" class="form-control" [(ngModel)]="cita.hora" />
+                </p>
+        
+                <table>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-primary" (click)="this.insertarCita()">Insertar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-warning" (click)="this.updateCita()">Modificar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" (click)="this.deleteCita()">Eliminar</button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger" (click)="this.clearForm()">Limpiar</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-success" (click)="irA('/home')">Ir a home</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <hr/>
+        <p></p>
+    
+        <h4>Listado de citas</h4>
+        <table class="table">
+            <thead>
+                <th></th>
+                <th>Cliente</th>
+                <th>Motivo</th>
+                <th>Mascota</th>
+                <th>Estado</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Seleccionar</th>
+            </thead>
+            <tbody>
+              @for (cita of citas; track cita.id) {
+                  <tr>
+                      <td></td>
+                      <td>{{cita.cliente}}</td>
+                      <td>{{cita.motivo}}</td>
+                      <td>{{cita.mascota}}</td>
+                      <td>{{cita.estado}}</td>
+                      <td>{{cita.fecha}}</td>
+                      <td>{{cita.hora}}</td>
+                      <td>
+                          <button type="button" class="btn btn-success" (click)="selectCita(cita)">Seleccionar</button>
+                      </td>
+                  </tr>
+                  
+              }
+          </tbody>
+        </table>
+    
+    </div>    
+  </body>
+  

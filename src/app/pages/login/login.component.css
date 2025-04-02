@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+    background: #bfbebe;     
+}
+
+
+.container {
+    display: flex;
+    width: 1200px;
+    height: 650px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Sign In Section */
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.sign-in-container {
+    background: white;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+.sig {
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    
+
+    border: 1px solid #ccc;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+    margin: 10px 0;
+}
+
+button {
+    background: #2724cf;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+
+
+button:hover {
+    background: #0300a3;
+}
+
+/* Sign Up Section */
+.sign-up-container {
+    flex: 1;
+    background: #0a07e0;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+

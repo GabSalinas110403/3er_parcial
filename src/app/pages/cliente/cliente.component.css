@@ -1,0 +1,32 @@
+h1, h4{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.col-sm-4 {
+    background: #6e9fd1; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 30px;
+    width: 50%;
+}
+
+button{
+    background-color: rgb(21, 76, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.table{
+    padding: 20px;
+    background-color: #6e9fd1;
+}

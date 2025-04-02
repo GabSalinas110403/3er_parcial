@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+  
+  <body>
+    <div class="container">
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1 class="sig">Sign in</h1>
+          <div class="col-sm-4">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                
+                    <label>E-Mail:</label>
+                    <input type="email" class="form-control" 
+                       formControlName="email" />
+                    @if(form.get('email')?.touched && form.get('email')?.errors) {
+                        <div style="color:red;">Error de validacion </div>
+                    }
+                
+                
+                    <label>Password:</label>
+                    <input type="password" class="form-control" 
+                       formControlName="password" />
+                    @if(form.get('password')?.touched && form.get('password')?.errors
+                    || this.error) {
+                        <div style="color:red;">Error de validacion </div>
+                    }
+                
+                
+                <div>
+                    <button type="submit" class="btn btn-primary">SIGN IN</button>
+                </div>
+            </form>
+        </div>    
+        </form>
+      </div>
+  
+      <div class="form-container sign-up-container">
+        <div class="content">
+          <h1>Hello, Welcome!</h1>
+        </div>
+      </div>
+    </div>
+  </body>

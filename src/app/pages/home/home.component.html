@@ -1,0 +1,29 @@
+<body>
+    <div class="container">
+        <div class="form-container sign-in-container">
+            <div action="container-home">
+  
+                <div class="div1"> 
+                    <h3>Citas</h3>
+                    <p>Agenda y gestiona tus citas de manera rápida y sencilla. Mantén un control organizado de tus compromisos para optimizar tu tiempo.</p>
+                    <button class="btn btn-success" (click)="irA('/citas')">Ir a Citas</button>
+                </div>
+            
+                <div class="div1"> 
+                    <h3>Clientes</h3>
+                    <p>Registra y administra la información de tus clientes de forma eficiente. Accede fácilmente a sus datos y mejora la comunicación con ellos.</p>
+                    <button class="btn btn-success" (click)="irA('/clientes')">Ir a Clientes</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="form-container sign-up-container">
+            <div class="content">
+              <h1>Home</h1>
+            </div>
+            <div>
+                <button type="button" class="exit-button btn btn-warning" (click)="salir()">Cerrar sesion</button>
+            </div>
+        </div>
+    </div>
+</body>
